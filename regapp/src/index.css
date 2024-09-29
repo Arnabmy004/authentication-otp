@@ -3,6 +3,11 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+.react-tel-input .form-control{
+    @apply !w-full py-6 !text-base;
+}
 .otp-container{
     @apply flex justify-between gap-2;
 }
