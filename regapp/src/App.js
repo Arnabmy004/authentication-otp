@@ -7,7 +7,7 @@ import { CgSpinner } from "react-icons/cg";
 import OTPInput, { ResendOTP } from "otp-input-react";
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
-import { auth, RecaptchaVerifier, signInWithPhoneNumber } from "./firbase.config";
+import { auth, RecaptchaVerifier, signInWithPhoneNumber } from "./firebase.config";
 import toast, { Toaster } from 'react-hot-toast';
 
 const App = () => { 
@@ -47,9 +47,9 @@ const App = () => {
     setLoading(true);
     onCapchaVerify();
     const appVerifier=window.recaptchaVerifier
-    const formatph='+91'+ph;
+    const formpatph='+91'+ph;
 
-    signInWithPhoneNumber(auth, formatph, appVerifier)
+    signInWithPhoneNumber(auth, formpatph, appVerifier)
     .then((confirmationResult) => {
      
       window.confirmationResult = confirmationResult;
